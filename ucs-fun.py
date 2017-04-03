@@ -9,23 +9,12 @@ print 'Logged in Capitan!'
 from ucsmsdk.mometa.ls.LsServer import LsServer
 
 # checking to see if the python created SP exists - delete it if so
-print 'Clean up time - checking for my work before this run'
 
-spa = handle.query_dn("org-root/ls-sp1_demo")
-handle.remove_mo(spa)
-handle.commit()
-
-print 'Bath felt good -ahh'
 
 sp = LsServer(parent_mo_or_dn="org-root", name="sp1_demo")
 handle.add_mo(sp)
-stat =  mo.status
-print stat
+print sp
 
-if mo.status = 0: 
-   print("SP does not exist..no delete necessary")
-  else:
-   handle.commit()
 
 print 'Created sp1_demo service profile'
 
