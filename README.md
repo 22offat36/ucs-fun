@@ -1,3 +1,1 @@
-# ucs-fun
-# ucs-fun
-# ucs-fun
+A short script that logs into UCS and creates a service profile
